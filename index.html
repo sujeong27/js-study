@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body, div, img, p, span, input, h1, h2, h3, h4, h5 {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Crayon Shin chan</title>
+    </head>
+    <body>
+        <div class="hidden" id="mainpage">
+            <form id="login-form">
+                <input required maxlength="15" type="text" placeholder="What is your name?" />
+                <input type="submit" value="Log In" />
+            </form>
+        </div>
+
+        <div class="hidden" id="subpage">
+            <div id="sub-todo">
+                <form id="todo-form"><input type="text" placeholder="Write a To Do" required /></form>
+                <ul id="todo-list"></ul>
+            </div>
+
+            <div id="sub-greeting">
+                <h1 id="greeting"></h1>
+                <div id="sub-date">
+                    <span id="date">0000년 0월 0일 0요일</span>
+                    <span id="clock">00:00:00</span>
+                    <div id="weather">
+                        <span></span>
+                    </div>
+                    <div id="quote">
+                        <span></span>
+                        <span></span>
+                    </div>
+            </div>
+        </div>
+
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/date.js"></script>
+    </body>
+</html>
